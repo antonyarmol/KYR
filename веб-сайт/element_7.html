@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\logo_2.svg">
+    <meta name="Author" content="Anton Yarmolchuk"> 
+        <title>Магазин компьютеров</title>
+    <link rel="stylesheet" href="css\element.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="main_page.html" class="a"><img src="img/logo.svg" alt="logo" ></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="support.html">Поддержка</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <div class="body">
+        <div class="element">
+            <div class="element_img"><img src="../веб-сайт/img/7.jpg" alt="hyperpc" class="img"></div>
+            <div class="element_txt"><p>Геракл</p></div>
+        </div>
+        <div class="information">
+            <div class="element_txt">
+                <h2>Характеристика:</h2>
+                <div class="ul">
+                <ul>
+                    <li>Видеокарта: NVIDIA GeForce RTX 3060 Ti</li>
+                    <li>Процессор: Intel® Core™ i5-12400(F)</li>
+                    <li>Материнская плата: ASROCK H670M-ITX/AX</li>
+                    <li>Оперативная память: 16GB Kingston Fury Beast RGB</li>
+                    <li>SSD накопитель: 1TB Samsung 990 PRO</li>
+                    <li>Блок питания: 750W HYPERPC SFX</li>
+                    <li>Операционная система: Microsoft Windows 11 Home BOX</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="element_buy">
+            <a href="form.html"><div class="buy"><p>Купить</p></div></a>
+        </div>
+    </div>
+    <footer>
+        <div class="block">
+            <div class="block_text">
+                <p>Все права защищены.</p>
+                <p>Cоздан для курсового проекта по дисциплине "Компьютерные языки разметки"</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

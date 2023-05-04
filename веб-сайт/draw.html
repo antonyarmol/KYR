@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\logo_2.svg">
+    <meta name="Author" content="Anton Yarmolchuk"> 
+        <title>Магазин компьютеров</title>
+    <link rel="stylesheet" href="css\main_page.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="main_page.html" class="a"><img src="img/logo.svg" alt="logo" ></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="support.html">Поддержка</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <div class="wrapper2">  
+        <div class="slide">
+            <a href="#"><img src="../веб-сайт/img/1_slide.jpg" alt="slide" class="slide_img"></a>
+        </div> 
+    </div>
+    <div class="news">
+        <div class="block">
+            <div class="block_text"><p>Добро пожаловать на наш сайт! Мы рады сообщить, что у нас состоится розыгрыш игрового компьютера "LUMEN" для поклонников игры CS GO!</p></div>
+        </div>
+        <div class="block">
+            <div class="block_text"><p>Условия розыгрыша просты. Для участия в розыгрыше вам нужно выполнить следующие шаги:</p>
+            <p>1. Подписаться на нашу страницу в Instagram: <a href="https://www.instagram.com/anton_yarmol/" class="inst">@anton_yarmol</a></p>
+            <p>2. Сделать репост нашего поста о розыгрыше в своем Instagram профиле с хэштегом #LUMEN_CS_GO.</p>
+            <p>3. Оставить комментарий под постом, отвечая на вопрос: "Какую роль вы играете в CS GO?"</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block_text"><p>Победитель будет выбран случайным образом из участников, выполнивших все условия розыгрыша. Результаты будут объявлены на нашей странице в Instagram через две недели после начала розыгрыша.</p></div>
+        </div>
+        <div class="block">
+            <div class="block_text"><p>Игровой компьютер "LUMEN" - это мощный и надежный компьютер, который обеспечит вам высокую производительность при игре в CS GO и другие игры. Состав компьютера включает в себя процессор Intel Core i7, видеокарту NVIDIA GeForce RTX 3080, 32 ГБ оперативной памяти и SSD накопитель на 1 ТБ.</p></div>
+        </div>
+        <div class="block">
+            <div class="block_text"><p>Не упустите свой шанс выиграть этот потрясающий игровой компьютер! Участвуйте в розыгрыше прямо сейчас!</p></div>
+        </div>
+    </div>
+    <footer>
+        <div class="block">
+            <div class="block_text">
+                <p>Все права защищены.</p>
+                <p>Cоздан для курсового проекта по дисциплине "Компьютерные языки разметки"</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

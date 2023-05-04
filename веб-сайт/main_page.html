@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\logo_2.svg">
+    <meta name="Author" content="Anton Yarmolchuk"> 
+        <title>Магазин компьютеров</title>
+    <link rel="stylesheet" href="css\main_page.css">
+    <link rel="xmlhttp" href="news.xml">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="main_page.html" class="a"><img src="img/logo.svg" alt="logo" ></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="support.html">Поддержка</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <div class="body">
+    <div class="wrapper2">  
+        <div class="slide">
+            <a href="draw.html"><img src="../веб-сайт/img/1_slide.jpg" alt="slide" class="slide_img"></a>
+        </div> 
+    </div>
+    <div class="news">
+        <div class="block">
+            <div class="block_title"><h1>Техно новости</h1></div>
+        </div>
+        <div class="block">
+            <div class="block_title"><h2>ASUS</h2></div>
+            <div class="block_text"><p>Выход новой серии игровых компьютеров от компании ASUS. Новые модели обладают увеличенным количеством ядер и потоков, что позволяет с легкостью запускать самые новые игры и приложения на высоких настройках. Кроме того, они имеют уникальную систему охлаждения, обеспечивающую бесшумную работу и дополнительный ресурс для работы системы.</p></div>
+            <div class="news_img"><img src="../веб-сайт/img/asus.jpg" alt="asus" class="block_img"></div>
+        </div>
+        <div class="block">
+            <div class="block_title"><h2>NVIDIA</h2></div>
+            <div class="block_text"><p>NVIDIA анонсировала новую видеокарту серии RTX. Она обладает увеличенным объемом памяти и повышенной производительностью, что обеспечивает наилучшие результаты в играх и рендеринге 3D-графики. Кроме того, новая видеокарта получила поддержку технологии DLSS 2.0, которая значительно увеличивает производительность при использовании высоких настроек графики.</p></div>
+            <div class="news_img"><img src="../веб-сайт/img/nvidea.jpg" alt="asus" class="block_img"></div>
+        </div>
+        <div class="block">
+            <div class="block_title"><h2>MSI</h2></div>
+            <div class="news_img"><img src="../веб-сайт/img/msi.jpg" alt="asus" class="block_img"></div>
+            <div class="block_text"><p>Компания MSI представила новые игровые ноутбуки с увеличенным дисплеем и бесшумной системой охлаждения. Новые модели обеспечивают максимально комфортную игровую среду и позволяют запускать самые требовательные игры на высоких настройках.</p></div>
+        </div>
+        <div class="block">
+            <div class="block_title"><h2>CD Projekt RED</h2></div>
+            <div class="news_img"><img src="../веб-сайт/img/red.jpg" alt="asus" class="block_img"></div>
+            <div class="block_text"><p>Студия CD Projekt RED объявила о выходе нового патча для игры Cyberpunk 2077, который улучшает производительность и стабильность игры на PC. Также в патче были исправлены некоторые ошибки, связанные с геймплеем и интерфейсом.</p></div>
+        </div>
+        <div class="block">
+            <div class="block_title"><h2>Ubisoft</h2></div>
+            <div class="block_text"><p>Выход новой игры в жанре боевиков от компании Ubisoft. Новая игра получила уникальную графическую составляющую и детально продуманный игровой процесс, который позволяет получить настоящее удовольствие от игры. Кроме того, игра получила поддержку технологии Ray Tracing, что обеспечивает реалистичное изображение и детализацию окружающего мира.</p></div>
+            <div class="news_img"><img src="../веб-сайт/img/ubisoft.jpg" alt="asus" class="block_img"></div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="block">
+            <div class="block_text">
+                <p>Все права защищены.</p>
+                <p>Cоздан для курсового проекта по дисциплине "Компьютерные языки разметки"</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

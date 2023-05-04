@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\logo_2.svg">
+    <meta name="Author" content="Anton Yarmolchuk"> 
+        <title>Магазин компьютеров</title>
+    <link rel="stylesheet" href="css\form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="main_page.html" class="a"><img src="img/logo.svg" alt="logo" ></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="support.html">Поддержка</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <div class="body">
+        <div class="form">
+            <form action="#">
+                <div class="input">
+                    <p>Имя: </p>
+                    <input type="text" name="name" tabindex="1">
+                </div>
+                <div class="input">
+                    <p>Фамилия: </p>
+                    <input type="text" name="username" tabindex="2">
+                </div>
+                <div class="input">
+                    <p>Отчество: </p>
+                    <input type="text" name="surname" tabindex="3">
+                </div>
+                <div class="input">
+                    <p>Телефон: </p>
+                    <input type="tel" name="surname" tabindex="4">
+                </div>
+                <div class="input">
+                    <p>Комментарий: </p>
+                    <textarea name="comment" tabindex="5"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" tabindex="6" class="submit">Отправить</button>
+                    <button type="reset" tabindex="7" class="reset">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+    <footer>
+        <div class="block">
+            <div class="block_text">
+                <p>Все права защищены.</p>
+                <p>Cоздан для курсового проекта по дисциплине "Компьютерные языки разметки"</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>
